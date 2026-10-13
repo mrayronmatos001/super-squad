@@ -1,0 +1,46 @@
+name: super_squad
+description: "Super Squad - jogo de esquadrão de heróis (Trabalho DDM - UFRN)"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Rede e injeção de dependências (mesma base do projeto de filmes)
+  dio: ^5.11.1
+  provider: ^6.1.5+1
+
+  # Persistência local
+  sqflite: ^2.4.4
+  path: ^1.9.1
+  shared_preferences: ^2.5.3
+
+  # Bibliotecas obrigatórias do trabalho
+  infinite_scroll_pagination: ^5.1.1
+  cached_network_image: ^4.0.0
+  primer_progress_bar: ^0.5.0
+  awesome_dialog: ^3.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: ChakraPetch
+      fonts:
+        - asset: assets/fonts/ChakraPetch-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/ChakraPetch-Bold.ttf
+          weight: 700
